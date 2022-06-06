@@ -57,6 +57,10 @@ func main() {
 	route.CustomerRoutes(r)
 	//CustomerAuthRoutes
 	route.CustomerAuthRoutes(r)
+	//ProjectRoutes
+	route.ProjectRoutes(r)
+	//AdvertisementRoutes
+	route.AdvertisementRoutes(r)
 
 	http.DefaultClient.Timeout = time.Minute * 10
 	log.Println("listening in port : ", sh.GetCmdArg(constants.PORT))

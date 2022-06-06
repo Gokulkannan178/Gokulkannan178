@@ -8,23 +8,20 @@ import (
 
 //Project : ""
 type Project struct {
-	ID                primitive.ObjectID   `json:"id" form:"id," bson:"_id,omitempty"`
-	Name              string               `json:"name,omitempty"  bson:"name,omitempty"`
-	ActiveStatus      bool                 `json:"activeStatus,omitempty"  bson:"activeStatus,omitempty"`
-	UniqueID          string               `json:"uniqueId" bson:"uniqueId,omitempty"`
-	Status            string               `json:"status,omitempty"  bson:"status,omitempty"`
-	Budget            float64              `json:"budget,omitempty"  bson:"budget,omitempty"`
-	NationalLevel     bool                 `json:"nationalLevel"  bson:"nationalLevel"`
-	Mail              string               `json:"mail,omitempty"  bson:"mail,omitempty"`
-	Organisation      primitive.ObjectID   `json:"organisation,omitempty" bson:"organisation,omitempty"`
-	KnowledgeDomainID []primitive.ObjectID `json:"knowledgeDomainId,omitempty" bson:"-"`
-	StateID           []primitive.ObjectID `json:"stateId,omitempty" bson:"-"`
-	PartnerID         []primitive.ObjectID `json:"partnerId,omitempty" bson:"-"`
-	StartDate         *time.Time           `json:"startDate,omitempty"  bson:"startDate,omitempty"`
-	EndDate           *time.Time           `json:"endDate,omitempty"  bson:"endDate,omitempty"`
-	Version           float64              `json:"version,omitempty"  bson:"version,omitempty"`
-	Created           *CreatedV2           `json:"created,omitempty"  bson:"created,omitempty"`
-	Remarks           string               `json:"remarks"  bson:"remarks,omitempty"`
+	ID            primitive.ObjectID `json:"id" form:"id," bson:"_id,omitempty"`
+	Name          string             `json:"name,omitempty"  bson:"name,omitempty"`
+	ActiveStatus  bool               `json:"activeStatus,omitempty"  bson:"activeStatus,omitempty"`
+	UniqueID      string             `json:"uniqueId" bson:"uniqueId,omitempty"`
+	Status        string             `json:"status,omitempty"  bson:"status,omitempty"`
+	Budget        float64            `json:"budget,omitempty"  bson:"budget,omitempty"`
+	NationalLevel bool               `json:"nationalLevel"  bson:"nationalLevel"`
+	Mail          string             `json:"mail,omitempty"  bson:"mail,omitempty"`
+	Organisation  primitive.ObjectID `json:"organisation,omitempty" bson:"organisation,omitempty"`
+	StartDate     *time.Time         `json:"startDate,omitempty"  bson:"startDate,omitempty"`
+	EndDate       *time.Time         `json:"endDate,omitempty"  bson:"endDate,omitempty"`
+	Version       float64            `json:"version,omitempty"  bson:"version,omitempty"`
+	Created       *CreatedV2         `json:"created,omitempty"  bson:"created,omitempty"`
+	Remarks       string             `json:"remarks"  bson:"remarks,omitempty"`
 }
 
 type ProjectFilter struct {

@@ -29,83 +29,11 @@ const (
 const (
 	COLLECTIONUSER         = "users"
 	COLLECTIONORGANISATION = "organisations"
+	COLLECTIONPROJECT      = "projects"
 	COLLECTIONDUSERTYPE    = "usertypes"
 )
 
-//ACL Collections
+// Advertisement Collections
 const (
-	COLLECTIONMODULE             = "aclmastermodules"
-	COLLECTIONMENU               = "aclmastermenus"
-	COLLECTIONTAB                = "aclmastertabs"
-	COLLECTIONFEATURE            = "aclmasterfeatures"
-	COLLECTIONACLUSERTYPEMODULE  = "aclmasterusetypemodules"
-	COLLECTIONACLUSERTYPEMENU    = "aclmasterusetypemenus"
-	COLLECTIONACLUSERTYPETAB     = "aclmasterusetypetabs"
-	COLLECTIONACLUSERTYPEFEATURE = "aclmasterusetypefeatures"
-)
-
-// Product Collections
-const (
-	COLLECTIONPRODUCT = "products"
-)
-
-// Product Variant Collections
-const (
-	COLLECTIONPRODUCTVARIANT = "productsvariants"
-)
-
-const (
-	COLLECTIONPRODUCTVARIANTMESH = "productsvariantmesh"
-)
-
-// Product Variant Type Collections
-const (
-	COLLECTIONPRODUCTVARIANTTYPE = "productsvarianttypes"
-)
-
-// Inventory collections
-const (
-	COLLECTIONINVENTORY     = "inventories"
-	COLLECTIONINVENTORYMESH = "inventorymesh"
-)
-
-// Vendor Collections
-const (
-	COLLECTIONVENDOR = "vendors"
-)
-
-// Vendor Collections
-const (
-	COLLECTIONVENDORDASHBOARD = "vendordashboard"
-)
-
-// Vendor Info Collections
-const (
-	COLLECTIONVENDORINFO = "vendorinfos"
-)
-
-// Category Collection
-const (
-	COLLECTIONCATEGORY = "category"
-)
-
-// Cart Collection
-const (
-	COLLECTIONCART = "cart"
-)
-
-// SubCategory Collection
-const (
-	COLLECTIONSUBCATEGORY = "subcategory"
-)
-const (
-	COLLECTIONSCENARIO = "scenario"
-)
-
-const (
-	COLLECTIONPAYMENTMODE = "paymentmode"
-)
-
-const (
-	COLLECTIONORDERPAYMENT = "orderpayment"
+	COLLECTIONADVERTISEMENT = "advertisements"
 )

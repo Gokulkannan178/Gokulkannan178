@@ -11,7 +11,6 @@ import (
 
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
-	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
 //SaveCustomer :""
@@ -21,22 +20,6 @@ func (d *Daos) SaveCustomer(ctx *models.Context, Customer *models.Customer) erro
 		return err
 	}
 	Customer.ID = res.InsertedID.(primitive.ObjectID)
-	return nil
-
-}
-func (d *Daos) UpsertCustomer(ctx *models.Context, Customer *models.Customer) error {
-
-	d.Shared.BsonToJSONPrint(Customer)
-
-	opts := options.Update().SetUpsert(true)
-
-	query := bson.M{"mobile": Customer.Mobile}
-	update := bson.M{"$set": Customer}
-	_, err := ctx.DB.Collection(constants.COLLECTIONINVENTORY).UpdateOne(ctx.CTX, query, update, opts)
-	if err != nil {
-		return err
-	}
-
 	return nil
 
 }
